@@ -1,0 +1,231 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* common styles or utilities*/
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+.purple-color{
+    color: white;
+}
+/* top navigation bar styles */
+nav{
+    background-color: #562EFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1440px;
+    height: 94px; 
+}
+.nav-logo, .nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo img{
+    width: 40.42px;
+    height: 51px;
+    padding-right: 20px;
+}
+.nav-logo p{
+    color: white;
+    font-size: 24px;
+    margin: 0px;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin-right: 36px;
+}
+.nav-links img{
+    width: 51px;
+    height: 51px;    
+}
+/* top players style */
+.top-players{
+    margin-bottom: 30px;
+}
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+/* top blogs styles */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+}
+.blog{
+    display: flex;
+}
+.blog .thumbnail img{
+    width: 177px;
+     height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+    
+}
+.blog-author{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
+    font-size: 16px;
+}
+
+/* Courses Style */
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px; 
+}
+.course{
+    text-align: center;
+    box-shadow: 10px 10px 30px lightgray;
+    padding: 20px;
+    border-radius: 14px;
+}
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+    opacity: 0.25;
+}
+.course-info span{
+    color: #A2A2A2;
+}
+.course-duration{
+    padding: 5px 10px;
+    color: #FF4A60;
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    text-align: center;
+    align-items: center;
+}
+
+/* footer styles */
+footer{
+    background-color: #562EFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/* Media Queries */
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px){
+    nav{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-logo, .nav-links {
+        width: 100%;
+        height: 100%;
+    }
+    .nav-links{
+        padding-top: 0px;
+    }
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .blog,.course, .section-title{
+        text-align: center;
+    }
+    .course{
+        margin-bottom: 40px;
+    }
+}
+/* Tablet Devices */
+@media only screen and (min-width:689px) and (max-width: 991px){
+    
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .player{
+        justify-content: center;
+    }
+    .blogs, .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
