@@ -64,6 +64,9 @@ nav{
     color: white;
     margin-right: 36px;
 }
+.nav-links a:hover{
+    text-decoration: underline;
+}
 .nav-links img{
     width: 51px;
     height: 51px;    
