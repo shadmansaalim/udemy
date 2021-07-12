@@ -90,9 +90,18 @@ nav{
     width: 56px;
     height: 56px;
 }
+.player a{
+    text-decoration: none;
+}
+.player a:hover .player-name{
+    color: #562EFF;
+    text-decoration: underline;
+    cursor: pointer;
+}
 .player-name{
     margin-left: 16px;
     font-size: 18px;
+    color: black;
 }
 
 /* top blogs styles */
@@ -106,7 +115,12 @@ nav{
 }
 .blog .thumbnail img{
     width: 177px;
-     height: 117px;
+    height: 117px;
+    transition: width 0.2s linear 0s,height 0.2s linear 0s;
+}
+.blog .thumbnail img:hover{
+    width: 200px;
+    height: 140px;
 }
 .blog-info{
     margin-left: 16px;
@@ -114,6 +128,11 @@ nav{
 .blog-title{
     font-size: 20px;
     
+}
+.blog-title:hover{
+    color: #562EFF;
+    text-decoration: underline;
+    cursor: pointer;
 }
 .blog-author{
     color: #9F9F9F;
@@ -123,6 +142,10 @@ nav{
     text-decoration: none;
     color: #562EFF;
     font-size: 16px;
+}
+.blog-author a:hover{
+    text-decoration: underline;
+    color: tomato;
 }
 
 /* Courses Style */
@@ -137,10 +160,23 @@ nav{
     box-shadow: 10px 10px 30px lightgray;
     padding: 20px;
     border-radius: 14px;
+    transition: border 0.1s linear 0s;
+}
+.course:hover{
+    border: 3px solid black;
 }
 .course .course-banner img{
     width: 224px;
     height: 104px;
+}
+.course-title:hover{
+    color: #562EFF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.course-author:hover{
+    text-decoration: underline;
+    color: tomato;
 }
 .course-info{
     display: flex;
