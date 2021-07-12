@@ -267,9 +267,11 @@ footer{
 }
 /* Tablet Devices */
 @media only screen and (min-width:689px) and (max-width: 991px){
-    
     .container{
         width: 100%;
+    }
+    .section-title{
+        text-align: center;
     }
     .players{
         grid-template-columns: repeat(2,1fr);
@@ -280,5 +282,20 @@ footer{
     .blogs, .courses{
         grid-template-columns: repeat(1,1fr);
     }
+    .blog{
+        padding-left: 100px;
+    }
+    .courses{
+        grid-row-gap: 40px;
+    }
+    .course{
+        width: 50%;
+        margin-left: 170px;
+    }
+    footer p{
+        font-size: 13px;
+        text-align: center;
+    }
+
     
 }
